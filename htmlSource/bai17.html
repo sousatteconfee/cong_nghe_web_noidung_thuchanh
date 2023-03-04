@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 17</title>
+</head>
+<style>
+    *{
+        margin: 0%; padding: 0% auto;}
+    .bai17a{
+        background-color: bisque;}
+
+    .browser17b{
+        width: 200px;}
+
+    .myRange{
+        -webkit-appearance: none;
+        width: 15%;
+        height: 8px;
+        border: 2px;
+        border-color: black;  
+        background: #fdf1cf;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+}
+
+    .myRange::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 10px;
+        height: 18px;
+        border: 20%; 
+        border-color: black;
+        background: #f9d994;
+        cursor: pointer;
+}
+
+    .myRange::-moz-range-thumb {
+        width: 5px;
+        height: 5px;
+        border: 20%;
+        border-color: black;
+        background: #f9d994;
+        cursor: pointer;
+}
+</style>
+<body>
+    <div class="bai17a">
+        <h3><center>Survey Form</center></h3>
+        <p>If you are interested in purchasing one or more of our products, before ordering please complete some or all of the following survey for our marketing department. Answering any question is optional, and all information will be kept strictly confidential. Thank you very much for your time!</p>
+        <ol>
+            <li>What is your name?</li>
+            <input type="text">
+            <li>What is your date of birth?</li>
+            <label for="">Month:</label>
+            <select name="" id="">
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="Deccember">Deccember</option>
+            </select>
+            <label for="">Date:</label>
+            <select name="" id="">
+                <option value="1">1</option>
+                <option value="...">...</option>
+            </select>
+            <label for="">Year:</label>
+            <input type="text" style="width: 70px;">
+            <li>What is your mailing address (if you would like to have a hard copy of our catalog sent to you)?</li>
+            <input type="text" size="40" style="height:80px;">
+            <li>What is your eamil address</li>
+            <input type="email" name="" id="">
+            <li>Have you viewed our online product catalog?</li>
+            <input type="radio" name="" id="">
+            <label for="">Yes</label>
+            <input type="radio" name="" id="">
+            <label for="">No</label>
+            <li>If so, what product(s), besides the one you are ordering, might you be interested in purchasing in the future? (Check all that apply.)</li>
+            <input type="checkbox" name="" id="">
+            <label for="">VCR</label><br>
+            <input type="checkbox" name="" id="">
+            <label for="">Big Screen TV</label><br>
+            <input type="checkbox" name="" id="">
+            <label for="">Audio Equipment</label><br>
+            <input type="checkbox" name="" id="">
+            <label for="">Video Equipment</label><br>
+            <input type="checkbox" name="" id="">
+            <label for="">Camera Equipment</label><br>
+            <input type="checkbox" name="" id="">
+            <label for="">Other</label>
+            <input type="text" size="31">
+            <li>Do you have any questions, comments or suggestions before proceeding to the Order Form?</li>
+            <input type="text" size="40" style="height:100px;">
+        </ol>
+        <br>
+        <center>
+            <input class="select" type="submit" value="Send Form">
+            &emsp;
+            &ensp;
+            <input class="clear" type="submit" value="Clear Form">
+        </center>
+    </div>
+    <br>
+    <br>
+
+    <div class="17b">
+        <label for="">Browser:</label>
+        <select class="browser17b">
+            <option value=""></option>
+        </select>
+        <br><br>
+        <label for="">Username:</label>
+        <input type="text" value="">
+        <br><br>
+        <label for="">Encryption:</label>
+        <select>
+            <option value="2048 (High Grade)">2048 (High Grade)</option>
+        </select>
+        <br><br>
+        <label for="">0</label>
+        <input type="range" min="0" max="100" class="myRange">
+        <label for="">100</label>
+        <br><br>
+        <input type="text" value="50">
+        <br><br>
+        <label for="">Birthday:</label>
+        <input type="date">
+        <br><br>
+        <label for="">Select your favorite color:</label>
+        <input type="color" name="" id="">
+        <br><br>
+        <label for="">Birthday (month and year):</label>
+        <input type="month">
+        <br><br>
+        <label for="">Select a week:</label>
+        <input type="week">
+        <br><br>
+        <label for="">Select a time:</label>
+        <input type="time">
+        <br><br>
+        <label for="">Birthday (date and time):</label>
+        <input type="datetime">
+        <br><br>
+        <label for="">Email:</label>
+        <input type="email">
+        <br><br>
+        <label for="">Search Google:</label>
+        <input type="search" name="" id="">
+        <br><br>
+        <label for="">Telephone:</label>
+        <input type="tel" name="" id="">
+        <br><br>
+        <label for="">Add your homepage:</label>
+        <input type="text" name="" id="">
+        <br><br>
+        <input type="submit" value="Submit">
+        <br><br>
+        <p>
+            <b>Note: </b>The datalist tag is not supported in Safari or IE9 (and earlier).
+        </p>
+    </div>
+</body>
+</html>
