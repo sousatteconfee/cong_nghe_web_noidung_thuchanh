@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Menu</title>
+</head>
+<body>
+    <style>
+        *{ padding: 0px auto; margin: 0px auto;}
+
+        .wrapper{
+            min-height: 300px;
+            width: 1089;
+            background-color: antiquewhite;
+        }
+
+        header{ 
+            height: 150px;
+            width: 100%;
+            background-color: blanchedalmond;
+            position: relative;
+        }
+
+        .top-menu li{
+            position: absolute;
+            height: 45px;
+            width: 100px;
+            background-color: chocolate;
+            list-style: none;
+            border: 3px dotted red;
+            border-radius: 10px;
+            line-height: 45px;
+            text-indent: 20pxp;
+        }
+
+        li a{ text-decoration: none;}
+        .top-menu li:first-child{
+            top: 30px;
+            left: 425px;
+        }
+
+        .top-menu li:nth-child(2){
+            top: 30px;
+            left: 540px;
+        }
+
+        .top-menu li:nth-child(3){
+            top: 30px;
+            left: 655px;
+        }
+
+        .top-menu li:nth-child(4){
+            top: 30px;
+            left: 770px;
+        }
+
+        .top-menu li:last-child{
+            top: 30px;
+            left: 885;
+        }
+
+        .top-menu li:hover{
+            background-color: blue;}
+
+        li:hover > a{
+            color: yellow;
+            font-style: italic;
+            font-weight: bolder;
+        }
+
+        .top-menu li.sub-menu li{
+            display: none;
+            position: absolute;
+        }
+
+        .top-menu li:hover .sub-menu li:nth-child(1){
+            display: block;
+            top: 50px;
+            left: 0px;
+        }
+
+        .top-menu li:hover .sub-menu li:nth-child(2){
+            display: block;
+            top: 105px;
+            left: 0px;
+        }
+    </style>
+</body>
+        <div class="wrapper">
+            <header>
+                <ul>
+                    <li><a href="">I TEM X</a></li>
+                    <li><a href="">I TEM X</a>
+                        <ul>
+                            <li><a href="">I TEM X</a></li>
+                            <li><a href="">I TEM X</a></li>
+                            <li><a href="">I TEM X</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">I TEM X</a></li>
+                    <li><a href="">I TEM X</a></li>
+                    <li><a href="">I TEM X</a></li>
+                </ul>
+            </header>
+        </div>
+</html>
