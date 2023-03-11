@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FlowerBox 360</title>
+    <link rel="icon" href="/img/AnhLogo.PNG">
 </head>
 <style>
     *{
@@ -12,8 +13,10 @@
         margin: 0px auto;
     }
     .wrapper{
-        height: 700px;
+        height: 620px;
         width: 1089px;
+        border: 1px black;
+        border-style: solid;
     }
     header{
         height: 110px;
@@ -69,34 +72,221 @@
         border-style: solid;
         border-color: rgb(32, 55, 205);
     }
-    #box-1{
-        position: absolute;
-        float: left;
-        background-color: rgb(61, 115, 117);
-        top: 86px;
-        right: 20px;
-        width: 45px;
-        height: 23px;
+    #box-1 a{
+        height: 35px;
+        width: 75px;
+        text-align: center;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: rgb(87, 124, 170);
+        text-decoration: none;
     }
-    #box-2{
-        position: absolute;
-        float: left;
-        background-color: rgb(61, 115, 117);
+    #box-2 a{
+        height: 35px;
+        width: 95px;
+        text-align: center;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: rgb(87, 124, 170);
+        text-decoration: none;
     }
-    #box-3{
-        position: absolute;
-        float: left;
-        background-color: rgb(61, 115, 117);
+    #box-3 a{
+        height: 35px;
+        width: 95px;
+        text-align: center;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: rgb(87, 124, 170);
+        text-decoration: none;
     }
-    #box-4{
-        position: absolute;
-        float: left;
-        background-color: rgb(61, 115, 117);
+    #box-4 a{
+        height: 35px;
+        width: 135px;
+        text-align: center;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: rgb(87, 124, 170);
+        text-decoration: none;
     }
-    #box-5{
-        position: absolute;
+    #box-5 a{
+        height: 35px;
+        width: 75px;
+        text-align: center;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: rgb(87, 124, 170);
+        text-decoration: none;
+    }
+    .box{
+        display: flex;
+        width: 50%;
+        justify-content: space-around;
+        margin-top: 75px;
+        margin-right: 12px;
+    }
+    .content1{
+        margin-top: 100px;
+        margin-left: 17px;
+        color: gray;
+        font-size: 22px;
+        width: 640px;
+        border-bottom: 2px dashed gray;
+        padding: 40px 0px 15px 2px; /*top, right, bot, left*/
+    }
+    .content2{
+        margin-top: 15px;
+        margin-left: 15px;
+        color: red;
+        width: 350px;
+        letter-spacing: 1px; /*Khoang cach cac chu*/
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: justify;
+        font-weight: 500;
+        font-style: italic;
+        text-shadow: 8px 8px 5px green;
+    }
+    .content-form{
         float: left;
-        background-color: rgb(61, 115, 117);
+        margin-top: 20px;
+        margin-left: 10px;
+        color: gray;
+        width: 350px;
+    }
+    .content3{
+        float: left;
+        position: absolute;
+        margin-top: -85px;
+        margin-left: 430px;
+        color: gray;
+        font-size: 22px;
+        width: 220px;
+        border-bottom: 2px dashed gray;
+        padding: 15px 2px; /*top, right, bot, left*/
+    }
+    .ct3-des1{
+        float: left;
+        position: absolute;
+        margin-top: -15px;
+        margin-left: 430px;
+        color: gray;
+        font-size: 15px;
+        width: 200px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .ct3-des2{
+        float: left;
+        position: absolute;
+        margin-top: 110px;
+        margin-left: 430px;
+        color: gray;
+        font-size: 15px;
+        width: 200px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .ct3-des3{
+        float: left;
+        position: absolute;
+        margin-top: 180px;
+        margin-left: 430px;
+        color: gray;
+        font-size: 15px;
+        width: 200px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .content4{
+        float: left;
+        position: absolute;
+        margin-top: -115px;
+        margin-left: 730px;
+        color: gray;
+        font-size: 22px;
+        width: 305px;
+        border-bottom: 2px dashed gray;
+        padding: 15px 2px; /*top, right, bot, left*/
+    }
+    .img-content{
+        float: left;
+        position: absolute;
+        margin-top: -35px;
+        margin-left: 370px;
+        width: 300px;
+        height: 120px;
+        border: 1px;
+        border-style: solid ;
+        padding: 5px 5px 5px 5px;
+        border-color: gray;
+    }
+    .content5{
+        float: left;
+        position: absolute;
+        margin-top: 115px;
+        margin-left: 730px;
+        color: rgb(88, 88, 88);
+        font-size: 17px;
+        width: 310px;
+        text-align: justify;
+        font-weight: 500;
+        letter-spacing: 1px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .readmode-link{
+        float: left;
+        position: absolute;
+        margin-top: 260px;
+        margin-left: 580px;
+        font-weight: 800;
+        text-decoration: none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    footer{
+        height: 30px;
+        width: 1089px;
+        margin-top: 320px;
+        background-color: #294e79;
+        position: absolute;
+    }
+    .footer-ct1{
+        float: left;
+        margin-top: 6px;
+        color: white;
+        font-size: 14px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .footer-ct2{
+        float: left;
+        margin-top: 6px;
+        color: white;
+        font-size: 14px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .footer-ct3{
+        float: left;
+        margin-top: 6px;
+        color: rgb(130, 186, 255);
+        font-size: 14px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .footer-ct4{
+        float: left;
+        margin-top: 6px;
+        color: rgb(130, 186, 255);
+        font-size: 14px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 </style>
 <body>
@@ -108,14 +298,85 @@
             <input type="text" name="search" id="search" placeholder="Search the site...">
             <button type="submit" id="go">GO</button>
             <div class="box">
-                <div id="box-1">Home</div>
-                <div id="box-2">Promotion</div>
-                <div id="box-3">Gift baskets</div>
-                <div id="box-4">Flower Services</div>
-                <div id="box-5">About</div>
+                <div id="box-1"><a class="box-1-a" href="">Home</a></div>
+                <div id="box-2"><a class="box-2-a" href="">Promotion</a></div>
+                <div id="box-3"><a class="box-3-a" href="">Gift baskets</a></div>
+                <div id="box-4"><a class="box-4-a" href="">Flower Services</a></div>
+                <div id="box-5"><a class="box-5-a" href="">About</a></div>
             </div>
         </header>
+        <nav class="content">
+            <p class="content1">Why Not Contact Us Today!</p>
+            <p class="content2">For FlowerBox 360 shoppers, that means not only can you send your friend add loved ones the hightest quality flowers found on online, but that you can do so at a great value</p>
+            <form class="content-form">
+                <table class="bang">
+                    <tr>
+                        <td><label for="name_ip">Name:</label></td>
+                        <td><label for="mail_ip">Email:</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="" id="name-ip"></td>
+                        <td><input type="email" name="" id="mail-ip"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tel_ip">Telephone:</label></td>
+                        <td><label for="sub_ip">Subject:</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="tel" name="" id="tel-ip"></td>
+                        <td><input type="text" name="" id="sub-ip"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><label for="mess-ip">Message:</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> <textarea name="" id="" cols="45" rows="5"></textarea></td>
+                    </tr>
+                    <tr>
+                        <tr>
+                            <td><input type="button" value="Submit"> <input type="button" value="Reset"></td>
+                        </tr>
+                    </tr>
+                </table>
+            </form>
+            <p class="content3">FlowerBox 360 Info!</p>
+            <p class="ct3-des1">
+                Operating Hours: <br> 
+                Monday-Friday: 9.00am-5.00pm.<br> 
+                Saturday:9.00am-1.00pm.<br> 
+                Sunday: Closed (No Deliveries)<br> 
+                ORDER ONLINE 24/7
+            </p>
+            <p class="ct3-des2">
+                Software Engineering Dept. <br> 
+                Information Technology Falcuty<br> 
+                First Floor, H Building
+            </p>
+            <p class="ct3-des3">
+                12 Nguyen Van Bao St., Ward 4<br> 
+                Go Vap District<br> 
+                Ho Chi Minh City<br> 
+                Tel: 0283 8940 390<br> 
+                Fax: 0283.9940 954
+            </p>
+            <p class="content4">Discount & Specials</p>
+            <img src="/img/imgTuan4.png" class="img-content">
+            <p class="content5">
+                FlowerBox 360 offers many great 
+                discounts throughout the year, from 
+                coupons and coupon codes, to promo 
+                codes and other savings. We also
+                offer military flower discounts to our
+                wonderful troops!
+            </p>
+            <a class="readmode-link" href="">Read Mode &#62;&#62;</a>
+        </nav>
+        <footer class="footer">
+            <div class="footer-ct1">Copyright © 2017 - </div>
+            <div class="footer-ct2">&nbsp;All Rights Reserved - </div>
+            <div class="footer-ct3">&nbsp;Software Engineering Department - </div>
+            <div class="footer-ct4">&nbsp;Industrial University of Ho Chi Minh City</div>
+        </footer>
     </div>
 </body>
-
 </html>
