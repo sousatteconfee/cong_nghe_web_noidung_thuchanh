@@ -132,7 +132,12 @@
         background-color: rgb(87, 124, 170);
         text-decoration: none;
     }
+    li:hover{
+        color: blue;
+        background-color: darkgray;
+    }
     .box{
+        list-style: none;
         display: flex;
         width: 50%;
         justify-content: space-around;
@@ -298,13 +303,13 @@
             <p class="text-menu2">...to get your daily dose of luxury roses</p>
             <input type="text" name="search" id="search" placeholder="Search the site...">
             <button type="submit" id="go">GO</button>
-            <div class="box">
-                <div id="box-1"><a class="box-1-a" href="">Home</a></div>
-                <div id="box-2"><a class="box-2-a" href="">Promotion</a></div>
-                <div id="box-3"><a class="box-3-a" href="">Gift baskets</a></div>
-                <div id="box-4"><a class="box-4-a" href="">Flower Services</a></div>
-                <div id="box-5"><a class="box-5-a" href="">About</a></div>
-            </div>
+            <ul class="box">
+                <li id="box-1"><a class="box-1-a" href="">Home</a></li>
+                <li id="box-2"><a class="box-2-a" href="">Promotion</a></li>
+                <li id="box-3"><a class="box-3-a" href="">Gift baskets</a></li>
+                <li id="box-4"><a class="box-4-a" href="">Flower Services</a></li>
+                <li id="box-5"><a class="box-5-a" href="">About</a></li>
+            </ul>
         </header>
         <nav class="content">
             <p class="content1">Why Not Contact Us Today!</p>
