@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đề Kiểm Tra Tham Khao Số 4</title>
+    <link rel="icon" href="LogoTitle.webp">
+</head>
+<body>
+    <style>
+        *{
+            margin: 0% auto;
+            padding: 0% auto;
+        }
+        .wrapper{
+            height: 620px;
+            width: 750px;
+            background-color: white;
+            border: 1px solid;
+        }
+        header{
+            width: 750px;
+            height: 51px;
+            background-color: #AC4B16;
+        }
+        .title{
+            position: absolute;
+            margin-left: 10px;
+            margin-top: 10px;
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(127, 129, 1);
+            font-weight: 800;
+            text-shadow: -5px -5px 5px rgb(255, 255, 255); /*tren phai duoi trai*/
+        }
+        .top-menu{
+            display: flex;
+            justify-content: space-around;
+            margin-left: 2px;
+            width: 300px;
+            height: 23px;
+            font-weight: 400;
+        }
+        a{
+            text-decoration: none;
+            color: #AC4B16;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        a:hover{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(127, 129, 1);
+        }
+        .imgContent{
+            width: 750px;
+            height: 115px;
+        }
+        .content-1{
+            margin-left: 10px;
+            font-family: serif;
+            letter-spacing: 3px;
+            font-weight: 900;
+            font-size: large;
+            color: rgb(175, 119, 4);
+        }
+        .content-2{
+            position: absolute;
+            margin-left: -15px;
+            margin-top: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style: italic;
+            font-weight: 600;
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-align: justify;
+            color: #808000;
+        }
+        #text-box{
+            float: left;
+            margin-top: 90px;
+            margin-left: 40px;
+            width: 333px;
+            border: none;
+            border-bottom: 1.1px solid gray;
+            font-size: 15px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: white;
+        }
+        #email-box{
+            float: left;
+            margin-top: 30px;
+            margin-left: 40px;
+            width: 333px;
+            border: none;
+            border-bottom: 1.1px solid gray;
+            font-size: 15px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: white;
+        }
+        #pass-box{
+            float: left;
+            margin-top: 30px;
+            margin-left: 40px;
+            width: 333px;
+            border: none;
+            border-bottom: 1.1px solid gray;
+            font-size: 15px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: white;
+        }
+        #retypepass-box{
+            float: left;
+            margin-top: 30px;
+            margin-left: 40px;
+            width: 333px;
+            border: none;
+            border-bottom: 1.1px solid gray;
+            font-size: 15px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: white;
+        }
+        #signmeup-box{
+            display: flex;
+            justify-content: center;
+            margin-top: 300px;
+            margin-left: 40px;
+            width: 115px;
+            height: 30px;
+            color: white;
+            background-color: #808000;
+            border: none;
+            font-weight: 500;
+        }
+        
+        .item-khung{
+            background-color: #FAEBD7;
+            width: 240px;
+            height: 155px;
+            position: absolute;
+            margin-top: -335px;
+            margin-left: 490px;
+            border-radius: 25px 25px 0px 0px; /*Vien tron border "tren trai, tren phai, duoi phai, duoi trai"*/;
+        }
+        .content-3{
+            position: absolute;
+            margin-top: -345px;
+            margin-left: 460px;
+            font-size: large;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: #8F4C3A;
+            border-left: 1px rgb(192, 189, 189) solid;
+            height: 360px;
+            padding: 20px 0px 0px 50px; /*top, right, bot, left*/
+        }
+        .content-4{
+            position: absolute;
+            margin-top: -280px;
+            margin-left: 510px;
+            font-size: small;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 800;
+            width: 210px;
+            list-style-type: square;
+            color: #AC4B16;
+        }
+        .content-4 li a{
+            color: #e29463;
+        }
+        .content-5{
+            position: absolute;
+            margin-top: -170px;
+            margin-left: 510px;
+            font-size: large;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: #8F4C3A;
+            width: 100px;
+        }
+        .item-LaCay{
+            float: left;
+            margin-top: -140px;
+            margin-left: 510px;
+            width: 60px;
+            height: 40px;
+            border: 1px solid gray;
+            padding: 5px 5px 5px 5px;
+        }
+        .content-5-text{
+            position: absolute;
+            width: 100px;
+            margin-top: -143px;
+            margin-left: 590px;
+            text-align: justify;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            letter-spacing: 1px;
+        }
+        .content-5-text2{
+            position: absolute;
+            margin-top: -67px;
+            margin-left: 510px;
+            width: 180px;
+            text-align: justify;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            letter-spacing: 1px;
+        }
+        footer img{
+            margin-top: 30px;
+            width: 750px;
+            height: 45px;
+        }
+    </style>
+    <div class="wrapper">
+        <header class="header">
+            <p class="title">AUTUMN TRAVEL COMPANY</p>
+        </header>
+        <div class="top-menu">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Product</a>
+            <a href="">Services</a>
+            <a href="">Order</a>
+        </div>
+        <img class="imgContent" src="imgContent.png" alt="">
+        <nav>
+            <p class="content-1">Sign up for membership benefits</p>
+            <pre class="content-2">
+                Our philosophical values are transparency, respect, formality
+                and responsibility. Our stimulus is your enthusiasm. Our
+                motto is your satisfaction.
+            </pre>
+            <input type="text" name="" id="text-box" placeholder="Usename">
+            <input type="email" name="" id="email-box" placeholder="E-mail">
+            <input type="password" name="" id="pass-box" placeholder="Password">
+            <input type="password" name="" id="retypepass-box" placeholder="Retype password">
+            <input type="submit" value="SIGN ME UP" id="signmeup-box">
+            <div class="item-vien"></div>
+            <div class="item-khung"></div>
+            <p class="content-3">Links</p>
+            <ul class="content-4">
+                <li><a href="">Make your Own Tour</a></li>
+                <li><a href="">Maldives Tours</a></li>
+                <li><a href="">Nature & Adventure</a></li>
+                <li><a href="">Readymade Tours</a></li>
+                <li><a href="">Europe Tours</a></li>
+                <li><a href="">Russia Tours</a></li>
+            </ul>
+            <p class="content-5">More Info</p>
+        </nav>
+        <div class="content-6">
+            <img src="imgLaCayMuaThu.png" alt="" class="item-LaCay">
+            <p class="content-5-text">
+                Our purpose is the client
+                who gives to us the
+            </p>
+            <p class="content-5-text2">
+                opportunity
+                to serve and to make known the 
+                reality around the world.
+            </p>
+            <footer>
+                <img src="footer.png" alt="">
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
